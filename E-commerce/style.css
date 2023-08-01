@@ -1,0 +1,503 @@
+body{
+    padding: 0%;
+    margin: 0;
+    background-color:white;
+}
+.section-p1 {
+
+    padding:40px 80px ;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+button .normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: azure;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline:none ;
+    transition: 0.3s;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color:white;
+    box-shadow: 0px 10px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600px;
+    color: black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,#navbar li a.active{
+
+
+    color: red;
+}
+#navbar li a.active::after,#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: red;
+position: absolute;
+bottom: -4px;
+left:20px;
+}
+#hero{
+   background-image:url("/img/mm.jpg"); 
+   height: 100vh;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top 25% right 20%;
+   padding: 0 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   line-height: 0%;
+  size: 15px;
+}
+#hero h3{
+font-size: 18px;
+font-style: bold;
+padding-bottom: 15px;
+}#hero h4{
+    font-style: bold;
+    font-size: 20px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+#hero h1{
+    font-size: 50px;
+color: rgb(128, 0, 0);
+    padding-bottom: 15px;
+
+    }
+#hero h2{
+    font-style: bold;
+    font-size:50px ;
+}
+#hero h1,h2{
+    font-style: bold;
+    line-height: 0%;
+}
+#hero button{
+    background-image: url("/img/images.jpg");
+       background-color: transparent;
+        color: brown;
+        border:0;
+        padding: 14px 80px 14px 65px;
+background-repeat: no-repeat;
+cursor: pointer;
+font-weight: 700;
+font-size: 15px;
+    }
+    #feature .feature-box{
+        width: 180px;
+        text-align: center;
+        padding: 25px 15px;
+box-shadow: 20px 20px 34px rgba(0, 0,0, 0.03);
+border: 1px solid darkgray;
+border-radius: 4px;
+margin: 15px 0;
+    }
+    #feature .feature-box:hoverr{
+        box-shadow: 10px 10px 64px rgba(0, 0, 0, 0) ;
+    }
+    #feature{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #feature .feature-box h6{
+       
+        display: inline-block;
+        padding:18px 10px 10px 10px ;
+        line-height: 1;
+        border-radius: 4px;
+        color:black;
+        background-color: pink;
+    }
+    #feature .feature-box img{
+        width:100% ;
+        margin-bottom: 10px;
+    }
+
+#feature .feature-box:nth-child(2) h6{
+background-color: aquamarine;
+}
+#feature .feature-box:nth-child(3) h6{
+    background-color:lightcoral;
+    }
+    #feature .feature-box:nth-child(4) h6{
+        background-color:lightblue;
+        }
+        #product h2,p{
+            text-align: center;
+            font-size: 33px;
+
+        }
+        #product{
+            background-repeat: no-repeat;
+            background-image: url("/img/pink.jpg");
+            background-size: cover;
+        }
+        #product .product-container{
+           
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            flex-wrap: wrap;
+        }
+        #product .pro{
+           background-color: azure;
+            width: 20%;
+            min-width: 240px;
+            padding: 10px 12px;
+            border: 1px solid black;
+            border-radius: 15px;
+          margin: 10px 0;
+            cursor: pointer;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.03);
+            transition: 0.2 ease;
+            position: relative;
+            line-height: 0%;
+        } 
+        #product .pro:hover{
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.07); 
+        }
+        #product .pro img{
+width: 100px;
+border-radius: 20px;
+        }
+
+        #product .pro .desc{
+            text-align: start;
+            padding: 10px 0;
+
+        }
+        #product .pro .desc span{
+            color: darkgrey;
+            font-size: 14px;
+        }
+        #product .pro .desc h5{
+            padding-top: 6px ;
+            color: black;
+            font-size:15px ;
+
+        }
+        #product .pro .desc i{
+            font-size: 13px;
+            color: darkorange;
+
+        }
+        #product .pro .desc h4{
+            padding: 7px;
+            font-size: 15px;
+            font-weight: 700;
+            color: darkgreen;
+        }
+
+        #product .pro  .cart{
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+ }
+ #banner{
+font-size: 30px;
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/background1.jpg");
+width: 100%;
+height: 40vh;
+background-size: cover;
+background-position: center;
+ }
+#banner h4,h2,button{
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+#banner h2 span{
+    color: red;
+    
+}
+#banner button{
+    background-image: url("/img/images.jpg");
+    background-color: transparent;
+     color: brown;
+     border:0;
+     padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.3s;
+    }
+    #banner button:hover{
+        color:black;
+        background-color:white;
+        }
+        #newsletter{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background-image: url("/img/background.avif");
+            background-size:cover ;
+            background-repeat: no-repeat;
+            background-position: 20% 30%;
+           
+        }
+        #newsletter h4{
+font-size: 30px;
+font-weight: 700;
+
+        }
+        #newsletter p{
+
+            font-size:15px;
+font-weight: 600;
+
+        }
+        #newsletter p span
+        {
+            color: red;
+        }
+        #newsletter input{
+            height: 3.125rem;
+            padding:0 1.25em ;
+            font-size: 14px;
+            width:100% ;
+            border:1px solid transparent ;
+            border-radius: 4px;
+            outline: none;
+            border-top-right-radius:0 ;
+            border-bottom-right-radius:0 ;
+
+        }
+        #newsletter .form{
+            display: flex;
+            width: 40%;
+        }
+        #newsletter button .hut{
+            background-color: rgb(241, 240, 255);
+            color: black;
+            white-space: nowrap;
+ cursor: pointer;
+            box-sizing: content-box;
+            border-top-left-radius:0 ;
+            border-bottom-left-radius:0 ;
+        }
+        #newsletter button .hu:hover{
+cursor: pointer;
+            color: blue;
+            background-color: aqua;
+        }
+       .section-m1 h4,p{
+font-size: 20px;
+        }
+        footer
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+
+    footer .col
+    {
+        flex-direction: column;
+        display: flex;
+       align-items: flex-start;
+       margin-bottom: 20px;
+    }
+    footer.logo
+    {
+      margin-bottom: 30px; 
+
+    }
+    footer h4{
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    footer p{
+        font-size: 13px;
+    margin: 0 0 8px 0;
+
+    }
+    footer a{
+        font-size: 13px;
+        text-decoration: none;
+        color: #222;
+    margin-bottom: 10px ;
+    
+    }
+    #productdetails{
+        display: flex;
+        margin-top: 20px;
+
+    }
+   #productdetails .single-pro-img{
+    width:40% ;
+    margin-right: 50px;
+   }
+   .small-img-group{
+    display: flex;
+    justify-content: space-between;
+   }
+   .small-img-col{
+    cursor: pointer;
+   }
+#productdetails .single-pro-details{
+    width: 50%;
+    padding-top:30px ;
+}
+
+    #productdetails .single-pro-details h4{
+padding:40px 0 20px 0 ;
+
+}
+#productdetails .single-pro-details h2{
+    font-size: 26px;
+    
+    }
+    #productdetails .single-pro-details select{
+        display: flex;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+    #productdetails .single-pro-details input{
+        width: 54px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+
+    }
+    #productdetails .single-pro-details button{
+        background-color: aqua;
+        color: black;
+        cursor: pointer;
+        size: 50px;
+    }
+    #productdetails .single-pro-details button:hover{
+        background-color: rgb(255, 0, 21);
+        color:white;
+    }
+    #cart-add{
+display: flex;
+flex-wrap:wrap ;
+justify-content: space-between;
+    }
+     #coupon{
+width: 50%;
+margin-bottom: 30px;
+    }
+    #coupon input{
+        padding: 10px 20px;
+        outline: none;
+        width: 60%;
+        margin-right: 10px;
+        border: 10px solid black;
+    }
+    #cart-add button{
+        padding: 12px 20px;
+        background-color:green;
+        color:white;
+    }
+#subtotal{
+    width: 50%;
+    margin-bottom:30px ;
+    border: 1px solid gray;
+    padding: 30px;
+}#cart-add table
+{
+border-collapse: collapse;
+width: 100%;
+margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid pink;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#subtotal button{
+    background-color:green ;
+    color:white;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.look1{
+    margin: 0cm;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    background-color: lightpink;
+line-height: 30px;
+padding: 30px 0 11px 0;
+display: list-item;
+
+}
+.look1 img{
+    display: flex;
+    height: 90px;
+    width: 100px;
+}
+.look1 button{
+    background-color: orange;
+    color: white;
+    cursor: pointer; size:90px;
+    height: 30px;
+    width: 60px;
+    outline: none;
+    align-items: center;
+}
+.look1 button:hover{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+    size:90px;
+    height: 30px;
+    width: 60px;
+    outline: none;
+    align-items: center;
+}
+
+
+
+    
+    
+
+
+
+    
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <title>herat</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+></head>
+<body> 
+<section id="header">
+  <a href="#"><img src="\img\logo.jpg" height="80" class="dressing" alt=""></a>
+<div>
+  <ul id="navbar"> 
+    
+ <li><a  href="introduction.html">home</a></li></td>
+   <li> <a  class="active" href="help.html">shop</a></li>
+  <li><a  href= " about.html"  >about</a></li>
+   <li><a  href= "contact.html"  >cart</a></li>
+    
+ </ul>
+ </div>
+</section>
+<section id="productdetails" class="section-p1">
+    <div class="single-pro-img">
+
+        <img src="\img\kurti.jpg" width="100%"  id="mainimg" alt="">
+        <div class="small-img-group">
+            <div class="small-img-col">
+            <img src="\img\kurti.jpg" width="100%"  class="small-img" alt="">
+        </div> <div class="small-img-col">
+            <img src="\img\kurti1.jpg" width="100%"  class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="\img\kurti2.jpg" width="100%"  class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="\img\kurti3.jpg" width="100%"  class="small-img" alt="">
+        </div>
+        </div>
+    </div>
+    <div class="single-pro-details">
+        <h1>Kurti's</h1>
+        <h4>womens's kurti</h4>
+        <h2>$120</h2>
+        <select >
+            <option> select size</option>
+            <option> xl</option>
+            <option> l</option>
+            <option> XXl</option>
+            <option> XXXl</option>
+        </select>
+    <input type="number" value="1">
+    <button onclick="addCart()">add to cart</button>
+   <p> product details::
+    This kurti is flexible and if you wear your dress
+    it looks gorgeous and you feel good
+    and it is cost effective.....!!!!</p>
+
+    </div>
+   
+   
+</section>
+
+
+<section id="product" class="section-p1">
+    <h2>New Collections</h2>
+    <p>All are new modern collections and designs</p>\
+    <div class="product-container">
+      <div class="pro" onclick="window.location.href='help.html'">
+        <img src="\img\frock.avif" alt="">
+        <div class="desc">
+          <span>STYLE</span>
+          <h5>Trend Frock model-design</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$30</h4>
+        </div>
+        <a href="# " ><i class="fa-solid fa-cart-shopping  cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="\img\frock1.jpg" alt="">
+        <div class="desc">
+          <span>STYLE</span>
+          <h5>Trend Frock model-design</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+        <h4>$80</h4>
+        </div>
+        <a href="# " ><i class="fa-solid fa-cart-shopping  cart"></i></a>
+      </div>
+  
+      
+    
+  
+  
+    </div>
+  
+    
+  </section>
+
+<section id="newsletter" class="section-p1 section-m1">
+  <Div class="newstext">
+    <h4>Sign up for NewsLetter</h4>
+    <p>Get E-mail updates about our latest collections and <span>any offers</span>.</p>
+  </Div>
+  <div class="form">
+<input type="text" placeholder="add you E-mail">
+<button class="hut">Sign Up</button>
+  </div>
+</section>
+<footer class="section-p1">
+<div class="col">
+
+<img src="\img\logo.jpg" height="80" alt="">
+<h4>contact</h4>
+<p>Addrss:mohan's area t-nagar</p>
+
+<p><strong>phone:</strong>+904210506</p>
+<p><strong>Hour:</strong> 10:00am - 10:00pm , Mon-Sat    </p>
+<div class="Follow">
+     <h4>Follow us</h4>
+<div class="icon">
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-youtube"></i>
+<i class="fa-brands fa-pinterest"></i>
+</div>
+</div>
+</div>
+  <div class="col">
+  <h4>about</h4>
+  <a href="#">About us</a>
+  <a href="#">Delivery Information</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Terms & Condition</a>
+  <a href="#">Contact us</a>
+</div>
+
+<div class="col">
+  <h4>My Acount</h4>
+  <a href="#">Sign In</a>
+  <a href="#">View Cart</a>
+  <a href="#">My Wishlist</a>
+  <a href="#">Track  My Ordr</a>
+  <a href="#">Help</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+<script>
+var mainimg=document.getElementById("mainimg");
+var smallimg=document.getElementsByClassName
+("small-img");
+smallimg[0].onclick=function(){
+    mainimg.src=smallimg[0].src;
+}
+smallimg[1].onclick=function(){
+    mainimg.src=smallimg[1].src;
+}
+smallimg[2].onclick=function(){
+    mainimg.src=smallimg[2].src;
+}
+smallimg[3].onclick=function(){
+    mainimg.src=smallimg[3].src;
+}
+function addCart()
+{
+   
+    alert('dress are added to the cart');
+    onclick=location.href="form.html";
+}
+
+
+</script>
+<script src="jss.js"></script>
+
+    </body>
